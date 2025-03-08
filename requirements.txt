@@ -1,0 +1,11 @@
+wyge==1.1.5
+chromadb
+pymupdf
+camelot-py[cv]
+ghostscript
+opencv-python
+pandas
+pypdf
+PyPDF2
+pdfplumber
+pycryptodome
