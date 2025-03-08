@@ -1,3 +1,8 @@
+import sys
+import pysqlite3
+
+sys.modules["sqlite3"] = pysqlite3
+
 import streamlit as st
 import os
 from wyge.prebuilt_agents.multimodal_rag import MultiModalRAG
