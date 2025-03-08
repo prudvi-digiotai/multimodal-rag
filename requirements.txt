@@ -11,3 +11,4 @@ PyPDF2
 pdfplumber
 pycryptodome
 pysqlite3-binary
+IPython
