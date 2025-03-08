@@ -9,6 +9,6 @@ pandas
 pypdf
 PyPDF2
 pdfplumber
-pycryptodome
+pycryptodome==3.19.0
 pysqlite3-binary
 IPython
