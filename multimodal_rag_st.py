@@ -131,7 +131,7 @@ def main():
                             st.subheader("Retrieved Images")
                             for idx, content, meta in zip(retrieved_data["ids"], retrieved_data["content"], retrieved_data["metadata"]):
                                 if idx.startswith("image_"):
-                                    with st.expander(f"Result {i}"):
+                                    with st.expander(f"Image"):
                                         display_result({
                                             "ids": idx,
                                             "content":content,
