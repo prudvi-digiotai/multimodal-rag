@@ -131,9 +131,15 @@ def main():
                             st.subheader("Retrieved Images")
                             for idx, content, meta in zip(retrieved_data["ids"], retrieved_data["content"], retrieved_data["metadata"]):
                                 if idx.startswith("image_"):
-                                    with st.expander(f"Image - {meta.get('summary', 'No summary')}"):
-                                        image_data = base64.b64decode(content)
-                                        st.image(Image.open(BytesIO(image_data)))
+                                    with st.expander(f"Result {i}"):
+                                        display_result({
+                                            "ids": idx,
+                                            "content":content,
+                                            "metadata": meta
+                                        })
+                                    # with st.expander(f"Image - {meta.get('summary', 'No summary')}"):
+                                    #     image_data = base64.b64decode(content)
+                                    #     st.image(Image.open(BytesIO(image_data)))
                             
                     except Exception as e:
                         st.error(f"Error during search: {str(e)}")
